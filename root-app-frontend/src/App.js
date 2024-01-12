@@ -21,11 +21,15 @@ function App() {
 
     <div class name ="App">
       <h1> The garden builder application </h1>
-      <Login/>
+  
     </div>
     
       <nav>
         <ul>
+        <li>
+            <Link to="/login">Login</Link>
+          </li>
+
           <li>
             {/*Link is like an anchor tag <a>, and to= is like href*/}
             <Link to="/seeds/add">Add Seeds</Link>
@@ -81,6 +85,15 @@ function App() {
         <Route path="/journal/add" element={<AddJournal />} />
         
         <Route path="/journal/view-journal" element={<ViewJournal />} />
+
+        <Route path="/login" element={<Login />} />
+
+
+
+        
+
+
+        
 
       </Routes>
     </>
